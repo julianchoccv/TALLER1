@@ -1,0 +1,93 @@
+#include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
+
+using namespace std;
+
+\\ TALLER 1 ARQUITECTURA DE COMPUTADORES
+\\ JULIAN ANDRES CASTAÑEDA
+\\ ESTUDIANTE INGERNIERIA DE SISTEMAS UTP J.E.
+
+int multi(int n1, int n2)
+{
+    int i = 1;
+    int x = n1;
+    for(i; i < n2; i++)
+    {
+        n1=n1+x;
+    }
+    return(n1);
+}
+
+int pote(int n1 , int n2)
+{
+    int i = 1;
+    int x = n1;
+    for (i ; i<n2; i++)
+    {
+        n1=multi(n1,x);
+    }
+    return (n1);
+}
+    int poli(int p, int x, int k[0], int n, int i)
+{
+    for(i=0; i<=n; i++)
+    {
+          x= pote(x,i);
+          p=k[i]*x;
+}
+          return(p);
+
+
+}
+
+int factorial (int n1)
+{
+
+    int i=1;
+    int x=n1;
+    for (i; i<x; i++)
+    {
+        n1=multi(i,n1);
+    }
+    return (n1);
+}
+
+int divi(int n1, int n2)
+{
+	
+    int cociente;
+	 int resto;
+
+
+    if ( n1 > 0 && n2 > 0 )
+    {
+        cociente=0;
+        resto = n1;
+
+        while ( resto >= n2 )
+        {
+            resto -= n2;
+            cociente++;
+        }
+    
+    }
+    
+}
+
+int main ()
+{
+int n1,n2,n3,cociente,resto ;
+cout<<"DIGITE EL PRIMER NUMERO: \n"; 
+cin>>n1; 
+cout<<"DIGITE EL SEGUNDO NUMERO: \n"; 
+cin>>n2;
+n3 = multi(n1,n2);
+cout<<"LA MULTIPLICACION DE " <<n1<< " POR " <<n2<< " ES: " <<n3<< "\n";
+n3 = pote(n1,n2); cout<<n1<<" ELEVADO A LA " <<n2<< " ES: " <<n3<< "\n";
+n3 = factorial(n1);
+cout<<"EL FACTORIAL DE " <<n1<< " ES " <<n3<< "\n";
+n3 = factorial(n2);
+cout<<"\n LA DIVISION DE " <<n1<< " CON " <<n2<< " ES " <<cociente<< " Y SU RESIDUO ES " <<resto; COUT<<"\n";
+
+}
