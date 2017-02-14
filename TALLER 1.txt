@@ -5,9 +5,10 @@
 using namespace std;
 
 \\ TALLER 1 ARQUITECTURA DE COMPUTADORES
-\\ JULIAN ANDRES CASTAÑEDA
+\\ JULIAN ANDRES CASTAÃ‘EDA
 \\ ESTUDIANTE INGERNIERIA DE SISTEMAS UTP J.E.
 
+\\1.
 int multi(int n1, int n2)
 {
     int i = 1;
@@ -19,6 +20,7 @@ int multi(int n1, int n2)
     return(n1);
 }
 
+\\2.
 int pote(int n1 , int n2)
 {
     int i = 1;
@@ -29,6 +31,8 @@ int pote(int n1 , int n2)
     }
     return (n1);
 }
+
+\\3.
     int poli(int p, int x, int k[0], int n, int i)
 {
     for(i=0; i<=n; i++)
@@ -37,10 +41,9 @@ int pote(int n1 , int n2)
           p=k[i]*x;
 }
           return(p);
-
-
 }
 
+\\4.
 int factorial (int n1)
 {
 
@@ -53,6 +56,7 @@ int factorial (int n1)
     return (n1);
 }
 
+\\5.
 int divi(int n1, int n2)
 {
 	
